@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mac Setup Guide</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="mac-setup-guide">Mac Setup Guide</h1>
+<p>Instructions to follow to setup or migrate over to a new Mac</p>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>
+<p>Install iTerm2 (replacement for Terminal and iTerm)</p>
+</li>
+<li>
+<p>Setup and configure Zsh on iterm2</p>
+</li>
+</ol>
+<p>Upgrade oh my zsh</p>
+<pre><code class="language-bash">upgrade_oh_my_zsh
+</code></pre>
+<ul>
+<li>Add powerlevel9k theme</li>
+</ul>
+<pre><code class="language-bash">git <span class="hljs-built_in">clone</span> https://github.com/bhilburn/powerlevel9k.git ~/.oh-mu-zsh/custom/themes/powerlevel9k
+
+ZSH_THEME=<span class="hljs-string">&quot;powerlevel9k/powerlevel9k&quot;</span>
+
+<span class="hljs-built_in">source</span> ~/.zshrc
+</code></pre>
+<ul>
+<li>Update iTerm2 with powerlevel9k support</li>
+</ul>
+<pre><code class="language-bash">curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
+</code></pre>
+<ol start="3">
+<li>Install Xcode</li>
+</ol>
+<pre><code class="language-bash">xcode-select --install
+
+sudo xcode-select --reset
+</code></pre>
+<ol>
+<li>Setup homebrew</li>
+</ol>
+<pre><code class="language-bash">/bin/bash -c <span class="hljs-string">&quot;<span class="hljs-subst">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)</span>
+</span></code></pre>
+<p><a href="https://brew.sh/">https://brew.sh/</a></p>
+<ol start="2">
+<li></li>
+<li>
+<p>Install</p>
+</li>
+<li>
+<p>Install Apps</p>
+</li>
+</ol>
+<ul>
+<li>Chrome</li>
+<li>Firefox for Developer</li>
+<li>Slack Desktop</li>
+<li>Visual Studio Code</li>
+<li>Alfred</li>
+<li>Adobe Reader</li>
+<li>Dropbox</li>
+<li>Docker Hub for Desktop</li>
+</ul>
+
+        <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+        
+    </body>
+    </html>
